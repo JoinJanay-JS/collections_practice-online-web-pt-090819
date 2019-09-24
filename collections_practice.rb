@@ -8,13 +8,13 @@ def sort_array_desc(array)
   end
 end 
 
-def sort_array_char_count
+def sort_array_char_count(array)
   array.sort do |left, right|
     left.length <=> right.length
   end
 end 
 
-def swap_elements
+def swap_elements(array)
   array[1], array[2] = array[2], array[1]
   array
 end
@@ -24,4 +24,14 @@ def reverse_array(array)
 end
 
 def kesha_maker(array)
-  
+  array.each do |item|
+    item[2] = "$"
+  end
+end 
+
+def find_a(array)
+  array.find_all do |word|
+    word[0] == "a"
+  end
+end
+
